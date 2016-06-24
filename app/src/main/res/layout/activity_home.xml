@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.HomeActivity">
+
+    <FrameLayout
+        android:id="@+id/activity_home_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/activity_home_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_home_radiogroup_height"
+        android:background="@color/colorHomeRadio"
+        android:orientation="horizontal"
+
+        >
+
+        <RadioButton
+            android:id="@+id/activity_home_rb_news"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_home_bar_new"
+            android:gravity="center"
+            android:padding="@dimen/activity_houme_radiogroup_magin"
+            android:text="@string/home_new" />
+
+        <RadioButton
+            android:id="@+id/activity_home_rb_find"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_home_bar_find"
+            android:gravity="center"
+            android:padding="@dimen/activity_houme_radiogroup_magin"
+            android:text="@string/home_find" />
+
+        <RadioButton
+            android:id="@+id/activity_home_rb_me"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_home_bar_me"
+            android:gravity="center"
+            android:padding="@dimen/activity_houme_radiogroup_magin"
+            android:text="@string/home_me" />
+
+    </RadioGroup>
+
+</LinearLayout>
